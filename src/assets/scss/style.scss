@@ -1,0 +1,536 @@
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/brands.webp');
+  border-bottom: 1px solid rgb(0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: scale-down;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+
+    &__items {
+      padding: 0px 0px 20px 0px;
+      margin: 0;
+    }
+
+    &__link {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.15em;
+      text-decoration: none;
+      color: rgb(255, 203, 143);
+      text-transform: capitalize;
+      text-align: center;
+    }
+
+    &__link-tel {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.15em;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .menu {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+    }
+
+    &__items {
+      padding: 10px 20px 20px 20px;
+      margin: 0px;
+    }
+
+    &__links {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      transition: color 1s;
+      text-transform: capitalize;
+      text-align: center;
+
+      &:hover {
+        text-decoration: underline;
+        color: rgb(255, 203, 143);
+      }
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 150px auto;
+    max-width: 700px;
+
+    &__title-h2 {
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 54px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+    }
+
+    &__title-span {
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 54px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgb(255, 203, 143);
+    }
+
+    &__title-text {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: 0.15em;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__title-btn {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 46px;
+      letter-spacing: 0.15em;
+      padding: 0px 20px 5px 20px;
+      border: 1px solid rgb(255, 203, 143);
+      color: rgb(255, 203, 143);
+      transition: all 1s;
+      text-transform: capitalize;
+      text-align: center;
+
+      &:hover {
+        border: 1px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+.brands {
+  color: inherit;
+  background-color: transparent;
+
+  &__title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: 0.15em;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__catolog {
+    display: grid;
+    grid-template-columns: repeat(3, 386px);
+    gap: 20px;
+  }
+
+  &__catolog-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-top: 100px;
+  }
+
+  &__images {
+    display: block;
+    object-fit: fill;
+    transition: all 1s;
+    height: 520px;
+    width: 400px;
+
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+
+  &__btn {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.15em;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 203, 143);
+    color: rgb(0, 0, 0);
+    transition: all 1s;
+    text-transform: capitalize;
+    text-align: center;
+    height: 54px;
+    width: 385px;
+
+    &:hover {
+      background-color: transparent;
+      border: 3px solid rgb(255, 203, 143);
+      color: rgb(255, 203, 143);
+    }
+  }
+}
+
+.watches {
+  &__image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/watches.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+    background-size: cover;
+    padding-top: 200px;
+    height: 600px;
+    width: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.15em;
+    margin: 20px;
+    padding: 22px 51px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 203, 143);
+    border: 1px solid rgb(255, 203, 143);
+    box-shadow: 0px 76px 30px rgba(0, 0, 0, 0.01), 0px 43px 26px rgba(0, 0, 0, 0.05), 0px 19px 19px rgba(0, 0, 0, 0.09), 0px 5px 10px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: background-color 1s;
+    text-transform: capitalize;
+    text-align: center;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid rgb(255, 203, 143);
+      color: rgb(255, 203, 143);
+    }
+  }
+}
+
+.selling {
+  color: inherit;
+  background-color: transparent;
+
+  &__title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 96px;
+    letter-spacing: 0.15em;
+    margin-bottom: 100px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 386px);
+    gap: 20px;
+  }
+
+  &__gallery-item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+
+  &__gallery-images {
+    height: 435px;
+    transition: all 1s;
+    padding: 0px;
+    margin: 0px;
+
+    &:hover {
+      height: 550px;
+      opacity: 0.6;
+      cursor: pointer;
+    }
+  }
+
+  &__gallery-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.15em;
+    color: rgb(255, 203, 143);
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__gallery-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  &__gallery-price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: rgb(255, 203, 143);
+  }
+
+}
+
+.reviews {
+  color: inherit;
+  background-color: transparent;
+
+  &__title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: 0.15em;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(255, 203, 143);
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  &__item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(255, 203, 143);
+    text-transform: capitalize;
+  }
+
+  &__item-star {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+  }
+
+  &__btn {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    background-color: transparent;
+    border: 1px solid rgb(255, 203, 143);
+    color: rgb(255, 203, 143);
+    padding: 10px 50px 10px 50px;
+    margin: 50px auto;
+    transition: all 1s;
+
+    &:hover {
+      border: 1px solid rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+
+.company {
+  color: inherit;
+  background-color: transparent;
+
+  &__title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 96px;
+    letter-spacing: 0.15em;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(255, 203, 143);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.news {
+  color: inherit;
+  background-color: transparent;
+
+  &__title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 96px;
+    letter-spacing: 0.15em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  &__articles {
+    display: grid;
+    grid-template-columns: repeat(3, 386px);
+    gap: 20px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+
+  &__articles-item {
+    transition: all 1s;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+
+  &__articles-info {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.footer {
+  border: 1px solid rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/brands.webp');
+  background-position: bottom 100px;
+  background-repeat: no-repeat;
+  object-fit: scale-down;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+
+  &__nav-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__nav-item {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+
+  &__nav-company-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.24em;
+    color: rgb(255, 203, 143);
+  }
+
+  &__nav-company-li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    padding: 20px 0px 10px 20px;
+    margin: 0px;
+  }
+
+  &__nav-company-link {
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 1s;
+
+    &:hover {
+      text-decoration: underline;
+      color: rgb(255, 203, 143);
+    }
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 50px;
+  padding-top: 0px;
+
+  &__date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.26em;
+    color: rgb(255, 255, 255);
+  }
+
+  &__logo {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.26em;
+    color: rgb(255, 203, 143);
+  }
+}
